@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="gym-db@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.20">
+    <root id="1">
+      <ServerVersion>5.0.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="config"/>
+    <schema id="4" parent="1" name="gym-db">
+      <Current>1</Current>
+    </schema>
+    <schema id="5" parent="1" name="local"/>
+    <table id="6" parent="4" name="rooms"/>
+    <table id="7" parent="4" name="teachers"/>
+    <table id="8" parent="4" name="users"/>
+    <column id="9" parent="6" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="10" parent="6" name="__v">
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="11" parent="6" name="capacity">
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="12" parent="6" name="name">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="13" parent="6" name="type">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="14" parent="6" name="airConditioner">
+      <Position>1</Position>
+      <DataType>Boolean|12s</DataType>
+    </column>
+    <column id="15" parent="6" name="createdAt">
+      <Position>1</Position>
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="16" parent="6" name="updatedAt">
+      <Position>1</Position>
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="17" parent="6" name="description">
+      <Position>2</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="18" parent="8" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="19" parent="8" name="blocked">
+      <DataType>Boolean|12s</DataType>
+    </column>
+    <column id="20" parent="8" name="email">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="21" parent="8" name="password">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="22" parent="8" name="__v">
+      <Position>1</Position>
+      <DataType>Double(0)|8s</DataType>
+    </column>
+    <column id="23" parent="8" name="name">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="24" parent="8" name="role">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>
